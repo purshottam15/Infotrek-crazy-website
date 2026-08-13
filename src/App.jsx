@@ -7,6 +7,8 @@ import ActualRoom from "./pages/level1/ActualRoom";
 import Archive from "./pages/level1/Archive";
 import Level2Intro from "./pages/level2/Level2Intro";
 import VerificationPortal from "./pages/level2/VerificationPortal";
+import ScrapTheWebsite from "./pages/level3/components/ScrapTheWebsite";
+import ScrapForm from "./pages/level3/components/ScrapForm";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/surface/archive" element={<Archive />} />
           <Route path="/cracks/intro" element={<Level2Intro />} />
           <Route path="/cracks/verify" element={<VerificationPortal />} />
+          <Route path="/cracks/level3Intro" element={<ScrapTheWebsite />} />
+          <Route path="/cracks/devtools" element={<ScrapForm />} />
         </Route>
       </Routes>
     </BrowserRouter>
